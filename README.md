@@ -21,6 +21,12 @@ pip install -r requirements.txt
 ANTHROPIC_API_KEY=your-anthropic-api-key
 ```
 
+### Don't have an Anthropic API key? (Free Alternative)
+You can use [Groq](https://console.groq.com/) for fast, free models:
+1. Get a free API key from the Groq console.
+2. In your `.env` file, use `GROQ_API_KEY=your-groq-api-key`.
+3. Update the code in `main.py` to use the `groq` library (e.g., using model `"llama3-70b-8192"`) instead of `anthropic`.
+
 ## How To Use
 
 1. Start the backend server using Uvicorn:
